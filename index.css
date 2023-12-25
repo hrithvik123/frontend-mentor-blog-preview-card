@@ -24,11 +24,15 @@
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    margin: 0;
   }
 
-  .card {
+  .container {
     max-width: 300px;
-    margin: auto;
+  }
+    
+    
+  .card {
     display: flex;
     flex-direction: column;
     background-color: var(--white);
@@ -68,6 +72,11 @@
     margin: 0;
   }
 
+  .title:hover {
+    cursor: pointer;
+    color: var(--primary);
+  }
+
   .description {
     color: var(--grey);
   }
@@ -88,5 +97,10 @@
   }
 
   @media screen and (min-width: 376px) {
-    
+    .container {
+        max-width: 360px;
+    }
+    .card{
+        padding: calc(1.5*var(--padding));
+    }
   }
