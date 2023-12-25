@@ -36,6 +36,8 @@
     padding: var(--padding);
     gap: 1.25rem;
     flex-grow: 1;
+    border: 1px solid black;
+    box-shadow: 8px 8px 0px black;
   }
 
   .banner {
